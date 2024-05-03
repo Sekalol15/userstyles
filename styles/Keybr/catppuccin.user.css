@@ -15,7 +15,7 @@
 @var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Mauve*", "red:Red", "maroon:Maroon", "peach:Peach", "yellow:Yellow", "green:Green", "teal:Teal", "blue:Blue", "sapphire:Sapphire", "sky:Sky", "lavender:Lavender", "subtext0:Gray"]
 ==/UserStyle== */
 
-@-moz-document domain('<website-domain>') {
+@-moz-document domain('keybr.com') {
   /* This section applies the light/dark themes automatically based on the user's system theme.
      Use the below example CSS to start if the website you are theming doesn't have a light/dark mode toggle.
      For an actual example of this, see https://github.com/catppuccin/userstyles/blob/39288b593278e5efa48007d5fc001292cf910672/styles/brave-search/catppuccin.user.css#L16-L29.
@@ -94,7 +94,9 @@
     /* If you need to specify an overwrite specific to a flavor
     *  (e.g. only when the flavor is set to latte), you can use a `when` guard clause. */
     & when (@lookup = latte) {
-      /
+      html[data-color="light"] {
+        --background-color: @base;
+        --text-color: @text;
     }
     /* You can also negate the statement above by using
     *  a `when not` guard clause. */
