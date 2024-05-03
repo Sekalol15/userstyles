@@ -94,14 +94,16 @@
     /* If you need to specify an overwrite specific to a flavor
     *  (e.g. only when the flavor is set to latte), you can use a `when` guard clause. */
     & when (@lookup = latte) {
-      html[data-color="light"] {
+      html[data-color="light"],
+      html[data-color="dark"] {
         --background-color: @base;
         --text-color: @text;
     }
     /* You can also negate the statement above by using
     *  a `when not` guard clause. */
     & when not (@lookup = latte) {
-      html[data-color="dark"] {
+      html[data-color="dark"],
+      html[data-color="light"] {
         --background-color: @base;
         --text-color: @text;
         
