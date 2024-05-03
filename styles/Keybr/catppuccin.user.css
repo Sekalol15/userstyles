@@ -89,7 +89,111 @@
     }
 
     /* Start styling your website here: */
-    background-color: @base;
+     html [data-theme="dark"] {
+            --text-color: @text;
+            --link-color: @sky;
+            --header-color: @rosewater;
+            --legend-color: @text;
+            --background-color: @base;
+            --separator-color: #313244a;
+            --separator-border: 1px transparent;
+            --Keyboard-frame__color: @mantle;
+            --KeyboardKey-button__color: @mantle;
+            --KeyboardKey-button--depressed__color: @surface1;
+            --KeyboardKey-symbol__color: @mantle;
+            --KeyboardKey-symbol--depressed__color: @rosewater;
+            --KeyboardKey-symbol--dead__color: @red;
+            --KeyboardKey-pointer__color: @blue;
+            --KeyboardKey-pinky__color: @green;
+            --KeyboardKey-ring__color: @sky;
+            --KeyboardKey-middle__color: @yellow;
+            --KeyboardKey-indexLeft__color: @peach;
+            --KeyboardKey-indexRight__color: @pink;
+            --KeyboardKey-thumb__color: @red;
+            --TextInput-item__color: #cad3f5;
+            --TextInput-item--special__color: @overlay0;
+            --TextInput-item--hit__color: #7f849c;
+            --TextInput-item--miss__color: @red;
+            --TextInput-item--garbage__color: @text;
+            --TextInput-item--garbage__background-color: @red;
+            --TextInput-cursor__color: @text;
+            --TextInput-cursor__background-color: @mantle;
+            --LessonKey__color: @mantle;
+            --LessonKey--included__background-color: transparent;
+            --LessonKey--included__outline-color: transparent;
+            --LessonKey--excluded__background-color: #f3f3f3;
+            --LessonKey--excluded__outline-color: transparent;
+            --LessonKey--uncalibrated__background-color: #ddd;
+            --LessonKey--uncalibrated__outline-color: transparent;
+            --LessonKey--focused__outline-color: #333;
+            --LessonKey--forced__outline-color: transparent;
+            --LessonKey--current__outline-color: #333;
+            --LessonKey--slow__color: #ed8796;
+            --LessonKey--fast__color: #a6da95;
+            --DailyGoal-bar__color: @accentColor;
+            --DailyGoal-frame__color: #909090;
+            --Chart-frame__color: #666;
+            --Chart-headerText__color: rgba(38, 36, 61, .5);
+            --Chart-subheaderText__color: rgba(38, 36, 61, .5);
+            --Chart-speed__color: @green;
+            --Chart-accuracy__color: @peach ;
+            --Chart-complexity__color: @accentColor;
+            --Chart-threshold__color: #ed8796;
+            --Chart-hist-h__color: #8aadf4;
+            --Chart-hist-m__color: #ed8796;
+            --Chart-hist-r__color: #f5bde6;
+            --Calendar-caption__background-color: #f4f0f0;
+            --Calendar-headerCell__background-color: #ded3d3;
+            --Calendar-cell__color: #000;
+            --Calendar-cell__background-color: #7dc4e4;
+            --Calendar-cell--s0__background-color: rgba(75, 160, 242, .4);
+            --Calendar-cell--s1__background-color: rgba(75, 160, 242, .6);
+            --Calendar-cell--s2__background-color: rgba(75, 160, 242, .8);
+            --Calendar-cell--s3__background-color: #7dc4e4;
+            --Calendar-cell--z__background-color: #ebe4e4;
+            --Name-color: rgba(38, 36, 61, .7);
+            --Value-color: @text;
+            --Value--more__color: #68a162;
+            --Value--less__color: #ee99a0;
+            --Popup__color: #cad3f5;
+            --Popup__background-color: #faf9f9;
+            --Popup__shadow-color: #0000004c;
+            --Spotlight__background-color: #8282827f;
+            --Spotlight__border-color: #0067a3b2;
+            --Spotlight-marker__shadow-color: #1a1a1a7f;
+            --Player__background-color: transparent;
+            --Player--me__background-color: hsla(0, 15%, 91%, .9);
+            --Player--finished__background-color: #68bfd74c;
+            --PlayerDetails__color: #26243d;
+            --PlayerDetails__background-color: hsla(0, 16%, 89%, .8);
+            --Icon__color: #b8c0e0;
+            --TabList-item--active__color: #26243d;
+            --TabList-item--inactive__color: rgba(38, 36, 61, .5);
+            --Button__color: #cad3f5;
+            --Button__background-color: #1e2030;
+            --Button--focused__color: #fff;
+            --Button--focused__background-color: #597795;
+            --TextField__color: #1e2030;
+            --TextField__background-color: #fff;
+            --TextField__border-color: #5e5a5a19;
+            --TextField--focused__color: #1e2030;
+            --TextField--focused__background-color: #fff;
+            --TextField--focused__border-color: rgba(29, 28, 28, .098);
+            --MenuItem__color: @text;
+            --MenuItem__background-color: @accentColor;
+            --MenuItem--hover__color: #eef;
+            --MenuItem--hover__background-color: #597795;
+            --MenuItem--selected__color: #eef;
+            --MenuItem--selected__background-color: #345;
+            --ProgressBar__color: @accentColor;
+            --NavLink__color: @text;
+            --NavLink__background-color: transparent;
+            --NavLink--current__color: @text
+            --NavLink--current__background-color: transparent;
+            --Body__background-image: transparent;
+            --ExternalLink__background-image: transparent;
+        }
+
 
     /* If you need to specify an overwrite specific to a flavor
     *  (e.g. only when the flavor is set to latte), you can use a `when` guard clause. */
